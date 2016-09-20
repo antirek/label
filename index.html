@@ -1,21 +1,70 @@
 
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Label Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+        <h3>Label</h3>
+        <p>
+            <strong>Embed label on your webpage</strong>
+        </p>
+        <a href="https://github.com/antirek/label">Source</a>
+
+        <h4>Simple</h4>
+        <p>
+          
+        </p>
+
+        <h4>Bottom</h4>
+        <p>
+          
+        </p>
+        
+
+        <h4>Available options</h4>
+        <ul>
+          <li>side</li>
+          <li>top</li>
+          <li>bottom</li>
+        </ul>
+
+        <h4>API</h4>
+        <p>
+          label(text, url, options)
+        </p>
 
 
+        <br>
+        <br>
+        </div>
+      </div>
+    </div>
 
-<script type="text/javascript" src="label.js"></script>
-<script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    appendLabel('Спецакция! -5%!!', 'http://www.eldorado.ru', { 
-      backgroundColor: '#E51919',
-      textColor: 'white',
-      side: 'left',
-      top: '100px'
-    });
 
-    appendLabel('Спецакция! -5%!!', 'http://www.eldorado.ru', { 
-      backgroundColor: 'darkgreen',
-      textColor: 'white',
-      top: '150px'
-    });
-  });
-</script>
+    <script type="text/javascript" src="label.js"></script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        appendLabel('Спецакция! -5%!!', 'http://www.eldorado.ru', { 
+          backgroundColor: '#E51919',
+          textColor: 'white',
+          side: 'left',
+          top: '100px'
+        });
+
+        appendLabel('Sales! -15% -20%!!', 'http://www.eldorado.ru', { 
+          backgroundColor: 'darkgreen',
+          textColor: 'white',
+          bottom: '150px'
+        });
+
+      });
+    </script>
+  </body>
+</html>

@@ -19,6 +19,7 @@ appendLabel = (text, link, options)->
                 position: fixed !important;
                 background-color: @labelBackground;
                 top: @labelTop;
+                bottom: @labelBottom;
                 @labelSide: 0px;
                 padding: 10px;
                 max-height: 40px;
@@ -40,7 +41,8 @@ appendLabel = (text, link, options)->
     css = css
     .replace '@labelId', id
     .replace '@labelBackground', options.backgroundColor || 'red'
-    .replace '@labelTop', options.top || '300px'
+    .replace '@labelTop', options.top || 'none'
+    .replace '@labelBottom', options.bottom || 'none'
     .replace '@labelText', options.textColor || 'white'
     .replace '@labelSide', options.side || 'right'
     style = document.createElement "style"
